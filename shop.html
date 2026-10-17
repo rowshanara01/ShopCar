@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <!-- bootstrap added -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- css added -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body class="bodyBackground">
+    <!-- navbar start -->
+    <section class="divWhite">
+      <div class="container mx-auto">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div>
+              <img src="images/logo.png" style="width: 120px" alt="" />
+            </div>
+            <!-- collapse responsive button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menus -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto">
+                <a class="nav-link active nav-link-ltr" href="index.html"
+                  >Home</a
+                >
+                <a class="nav-link active nav-link-ltr" href="profile.html"
+                  >Profile</a
+                >
+                <a class="nav-link active nav-link-ltr" href="shop.html"
+                  >Shop</a
+                >
+                <a class="nav-link active nav-link-ltr" href="addCar.html"
+                  >Add Car</a
+                >
+              </div>
+              <!-- login register button -->
+              <div class="">
+                <a class="nav-link active nav-link-ltr" href="register.html"
+                  >Register</a
+                >
+                <a class="nav-link active nav-link-ltr mx-3" href="login.html"
+                  >Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar end -->
+
+    <!-- shop car -->
+    <section class="container mx-auto" style="margin-top: 70px">
+      <!-- search bar & dropdown -->
+      <section class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-3" >
+        <!-- brand dropdown -->
+        <div class="dropdown col">
+          <button
+            class="btn border dropdown-toggle w-100"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Brand
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Abarth</a></li>
+            <li><a class="dropdown-item" href="#">Acura</a></li>
+            <li><a class="dropdown-item" href="#">Alfa Romeo</a></li>
+            <li><a class="dropdown-item" href="#">Alpine</a></li>
+            <li><a class="dropdown-item" href="#">Amc</a></li>
+            <li><a class="dropdown-item" href="#">Audi</a></li>
+          </ul>
+        </div>
+
+        <!-- model -->
+        <div class="dropdown col">
+          <button
+            class="btn border dropdown-toggle w-100"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Model
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">100 ac limited</a></li>
+            <li><a class="dropdown-item" href="#">100 corsa</a></li>
+            <li><a class="dropdown-item" href="#">100 wagon</a></li>
+            <li><a class="dropdown-item" href="#">1.5 pickup/cov</a></li>
+            <li><a class="dropdown-item" href="#">1 series</a></li>
+            <li><a class="dropdown-item" href="#">1 ton pickup</a></li>
+            <li><a class="dropdown-item" href="#">2000 GT</a></li>
+          </ul>
+        </div>
+
+        <!-- price range -->
+        <div class="row g-2 ">
+          <div class="col">
+            <!-- from -->
+            <input
+              type="text"
+              class="form-control w-100"
+              placeholder="From"
+              aria-label="First name"
+            />
+          </div>
+          <!-- to -->
+          <div class="col">
+            <input
+              type="text"
+              class="form-control w-100"
+              placeholder="To"
+              aria-label="Last name"
+            />
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-danger w-100">Search</button>
+          </div>
+        </div>
+
+      </section>
+
+      <h2 class="text-center mt-5" style="margin-bottom: 30px">
+        Our Collections
+      </h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- 1 -->
+        <div class="col">
+          <div class="card h-100 cardStyle">
+            <img src="images/latest/l1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mercedes Benz Car</h5>
+              <h6>Brand: Mercedes</h6>
+              <p class="card-text textRed">$45,620</p>
+
+              <!-- buttons -->
+              <div class="">
+                <!-- add to cart button -->
+                <button type="button" class="btn btn-success btn-sm">
+                  Add cart
+                </button>
+                <!-- edit button -->
+                <a href="edit.html">
+                  <button type="button" class="btn btn-secondary btn-sm">
+                    Edit
+                  </button>
+                </a>
+                <!-- delete -->
+                <button type="button" class="btn btn-danger btn-sm">del</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col">
+          <div class="card h-100 cardStyle">
+            <img src="images/latest/l2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Yellow Ferrari 458</h5>
+              <h6>Brand: Ferrari</h6>
+              <p class="card-text textRed">$90,250</p>
+
+              <!-- buttons -->
+              <div class="">
+                <!-- add to cart button -->
+                <button type="button" class="btn btn-success btn-sm">
+                  Add cart
+                </button>
+                <!-- edit button -->
+                <a href="edit.html">
+                  <button type="button" class="btn btn-secondary btn-sm">
+                    Edit
+                  </button>
+                </a>
+                <!-- delete -->
+                <button type="button" class="btn btn-danger btn-sm">del</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col">
+          <div class="card h-100 cardStyle">
+            <img src="images/latest/l3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Black Audi Q7</h5>
+              <h6>Brand: Audi</h6>
+              <p class="card-text textRed">$44,350</p>
+
+              <!-- buttons -->
+              <div class="">
+                <!-- add to cart button -->
+                <button type="button" class="btn btn-success btn-sm">
+                  Add cart
+                </button>
+                <!-- edit button -->
+                <a href="edit.html">
+                  <button type="button" class="btn btn-secondary btn-sm">
+                    Edit
+                  </button>
+                </a>
+                <!-- delete -->
+                <button type="button" class="btn btn-danger btn-sm">del</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col">
+          <div class="card h-100 cardStyle">
+            <img src="images/latest/l4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">BMW Sports Car</h5>
+              <h6>Brand: BMW</h6>
+              <p class="card-text textRed">$78,760</p>
+
+              <!-- buttons -->
+              <div class="">
+                <!-- add to cart button -->
+                <button type="button" class="btn btn-success btn-sm">
+                  Add cart
+                </button>
+                <!-- edit button -->
+                <a href="edit.html">
+                  <button type="button" class="btn btn-secondary btn-sm">
+                    Edit
+                  </button>
+                </a>
+                <!-- delete -->
+                <button type="button" class="btn btn-danger btn-sm">del</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="poster-background" style="margin-top: 60px">
+      <footer class="container mx-auto">
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px">
+            <img
+              src="images/light.png"
+              style="width: 200px; margin-bottom: 20px"
+              alt=""
+            />
+            <p>
+              We are many variations of passages available but the majority have
+              suffered alteration in some form by injected humour words
+              believable.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px">
+            <h3 style="margin-bottom: 20px">Contact Us</h3>
+            <h5>Phone: +2 123 654 7898</h5>
+            <h5>Address: 102/5, Motijheel.</h5>
+            <h5>Email: info@example.com</h5>
+          </div>
+          <!-- 3 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px">
+            <h3 style="margin-bottom: 20px">Quick Links</h3>
+            <a href="" class="footerLinks">About Us</a>
+            <br />
+            <a href="" class="footerLinks">Update News</a>
+            <br />
+            <a href="" class="footerLinks">Terms and Conditions</a>
+            <br />
+            <a href="" class="footerLinks">Update News</a>
+          </div>
+          <!-- 4 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px">
+            <h3 style="margin-bottom: 20px">Newsletter</h3>
+            <p style="margin-bottom: 20px">
+              Subscribe Our Newsletter To Get Latest Update And News
+            </p>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Your Email"
+              />
+            </div>
+            <button type="button" class="btn btn-danger w-100">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- footer end -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+  </body>
+</html>

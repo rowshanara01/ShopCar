@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- bootstrap added -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- css added -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/registerLogin.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="bodyBackground">
+    <!-- navbar start -->
+    <section class="divWhite">
+      <div class="container mx-auto">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <div>
+              <img src="images/logo.png" style="width: 120px;" alt="">
+            </div>
+            <!-- collapse responsive button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menus -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto">
+                <a class="nav-link active nav-link-ltr" href="index.html"
+                  >Home</a>
+                <a class="nav-link active nav-link-ltr" href="profile.html"
+                  >Profile</a>
+                <a class="nav-link active nav-link-ltr" href="shop.html"
+                  >Shop</a>
+                <a class="nav-link active nav-link-ltr" href="addCar.html"
+                  >Add Car</a>
+              </div>
+              <!-- login register button -->
+              <div class="">
+                <a class="nav-link active nav-link-ltr" href="register.html"
+                  >Register</a>
+                <a class="nav-link active nav-link-ltr mx-3" href="login.html"
+                  >Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- navbar end -->
+
+    <!-- add car section -->
+    <br><br>
+    <section class="container mx-auto mt-5 wow pulse">
+        <div class="divWhite formWidth p-4" style="border-radius: 20px;">
+            <h4 class="text-center" >Edit information</h4>
+            <br>
+            <form action="">
+                <!-- car model -->
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control border-2" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Car model*</label>
+                </div>
+                <!-- brand name -->
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control border-2" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Brand*</label>
+                </div>
+                <!-- price -->
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control border-2" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Price*</label>
+                </div>
+
+                <div class="d-grid gap-1">
+                    <button class="btn btn-success" type="button">
+                        <span> <i class="fa-solid fa-right-to-bracket"></i> Update </span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="poster-background" style="margin-top: 60px;">
+      <footer class="container mx-auto" >
+        <div class="row">
+          <!-- 1 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px;" >
+            <img src="images/light.png" style="width: 200px; margin-bottom: 20px;" alt="">
+            <p>
+              We are many variations of passages available but the majority 
+              have suffered alteration in some form by injected humour words 
+              believable.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px;" >
+            <h3 style="margin-bottom: 20px;"> Contact Us </h3>
+            <h5> Phone: +2 123 654 7898 </h5>
+            <h5> Address: 102/5, Motijheel.</h5>
+            <h5>Email: info@example.com</h5>
+          </div>
+          <!-- 3 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px;" >
+            <h3 style="margin-bottom: 20px;"> Quick Links </h3>
+            <a href="" class="footerLinks">About Us</a>
+            <br>
+            <a href="" class="footerLinks">Update News</a>
+            <br>
+            <a href="" class="footerLinks">Terms and Conditions</a>
+            <br>
+            <a href="" class="footerLinks">Update News</a>
+          </div>
+          <!-- 4 -->
+          <div class="col-12 col-md-6 col-lg-3" style="margin-bottom: 20px;" >
+            <h3 style="margin-bottom: 20px;"> Newsletter </h3>
+            <p style="margin-bottom: 20px;">
+              Subscribe Our Newsletter To Get Latest Update And News
+            </p>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
+            </div>
+            <button type="button" class="btn btn-danger w-100">Subscribe</button>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- footer end -->
+
+    <!-- bootstrap file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

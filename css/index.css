@@ -1,0 +1,99 @@
+/* remove shadow and border */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+/* remove shadow and border end */
+
+/* navbar animation */
+.nav-link {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: #031d44;
+  padding: 15px 0px;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 500ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 80px;
+}
+/* navbar animation end*/
+
+/* slide background */
+.dark-gradient-background {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 40px;
+}
+
+.marginBottomSpace {
+  margin-bottom: 40px;
+}
+
+.textRed {
+  color: red;
+}
+
+/* poster style */
+.position-relative {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.poster-background {
+  background: black;
+  color: white;
+  padding: 30px;
+}
+
+/* card effect */
+.cardStyle {
+  transition: all 0.3s;
+}
+
+.cardStyle:hover {
+  transform: scale(1.04);
+}
+
+/* footer */
+.footerLinks {
+  text-decoration: none;
+  color: white;
+}
